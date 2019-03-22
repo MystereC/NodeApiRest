@@ -1,0 +1,31 @@
+<form #signUpForm="ngForm" >
+  <div class="form-group">
+  
+    <label for="pseudo">pseudo</label>
+    <input type="text" class="form-control" #pseudo="ngModel" [(ngModel)]="userService.selectedUser.pseudo" name="pseudo" id="pseudo"  placeholder="Entrez votre  pseudo">
+    
+  </div>
+  
+  <div class="form-group">
+  
+    <label for="Nom">Nom</label>
+    <input type="text" class="form-control" #nom="ngModel" [(ngModel)]="userService.selectedUser.nom" name="Nom" id="Nom"  placeholder="Entrez votre nom">
+    
+  </div>
+  <div class="form-group">
+  
+    <label for="Prenom">prenom</label>
+    <input type="text" class="form-control" class="form-control" #prenom="ngModel" [(ngModel)]="userService.selectedUser.prenom" name="Prenom" id="prenom"  placeholder="Entrez votre  prenom">
+    
+  </div>
+  <div class="form-group">
+   
+    <label for="Password">Password</label>
+    <input type="password" class="form-control" #password="ngModel" [(ngModel)]="userService.selectedUser.password" name="Password" id="Password1" placeholder="Entrez votre Password">
+	
+  </div>
+  
+ 
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
